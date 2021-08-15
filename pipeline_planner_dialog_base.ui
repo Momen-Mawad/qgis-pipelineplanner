@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dlgPipelineDialog</class>
+ <widget class="QDialog" name="dlgPipelineDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pipeline Planner</string>
+  </property>
+  <widget class="QTableWidget" name="tblImpacts">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>531</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <column>
+    <property name="text">
+     <string>Neue Spalte</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Neue Spalte</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Distance</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="btnPush">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>280</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnPush</sender>
+   <signal>pressed()</signal>
+   <receiver>dlgPipelineDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>496</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
